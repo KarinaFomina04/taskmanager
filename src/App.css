@@ -1,0 +1,19 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "schoolName . groupColor"
+    "hoursType totalHours courseStartDate"
+    "weekDays weekDays weekDays"
+    "breakTime hoursPerDay courseStartTime"
+    "teacherId teacherId audience"
+    "validationMessage validationMessage validationMessage";
+}
