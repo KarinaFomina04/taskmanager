@@ -46,7 +46,7 @@ const App = () => {
         return {
             ...data,
             courseStartDate: format(data.courseStartDate, DEFAULT_DATE_FORMAT),
-            courseEndDate : format(getCourseEndDate(data.totalHours, data.courseStartDate, data.weekDays), DEFAULT_DATE_FORMAT),
+            courseEndDate : format(getCourseEndDate(data.totalHours, data.hoursPerDay, data.courseStartDate, data.weekDays), DEFAULT_DATE_FORMAT),
             courseStartTime: format(data.courseStartTime, DEFAULT_TIME_FORMAT),
             courseEndTime: format(getCourseEndTime(data.hoursPerDay, data.courseStartTime, data.hoursType, data.breakTime), DEFAULT_TIME_FORMAT)
         }
